@@ -27,3 +27,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           goos: linux
           goarch: amd64
+          asset_name: ${BINARY_NAME}-${RELEASE_TAG}-${{ matrix.goos }}-${{ matrix.goarch }}

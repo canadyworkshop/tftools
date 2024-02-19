@@ -27,4 +27,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           goos: linux
           goarch: amd64
-          asset_name: tftools-${{RELEASE_TAG}}-${{ matrix.goarch }}
+          asset_name: tftools-${{ matrix.goos }}-${{ matrix.goarch }}
+#          asset_name: tftools-${{RELEASE_TAG}}-${{ matrix.goarch }}

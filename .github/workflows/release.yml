@@ -28,4 +28,3 @@ jobs:
           goos: linux
           goarch: amd64
           asset_name: tftools-${{github.ref_name}}-${{ matrix.goos }}-${{ matrix.goarch }}
-#          asset_name: tftools-${{RELEASE_TAG}}-${{ matrix.goarch }}
